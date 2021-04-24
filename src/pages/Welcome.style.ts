@@ -15,7 +15,6 @@ export const getStyles = () => StyleSheet.create({
   },
   title: {
     fontSize: 32,
-    fontWeight: 'bold',
     textAlign: 'center',
     color: colors.heading,
     marginTop: 38,
