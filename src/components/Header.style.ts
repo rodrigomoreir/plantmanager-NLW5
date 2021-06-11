@@ -1,7 +1,7 @@
 import { StyleSheet, SafeAreaView} from 'react-native'
-import colors from '../styles/colors'
+import colors from '../Themes/colors'
 import { getStatusBarHeight } from 'react-native-iphone-x-helper'
-import fonts from '../styles/fonts'
+import fonts from '../Themes/fonts'
 
 export const getStyles = () => StyleSheet.create({
   container: {

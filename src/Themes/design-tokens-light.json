@@ -1,0 +1,109 @@
+{
+  "colors": {
+    "a120": "#63bf31",
+    "a240": "#1592e6",
+    "a360": "#ff8800",
+    "b120": "#fa593c",
+    "b240": "#ffb905",
+    "b360": "#a6c715",
+    "c100": "#252627",
+    "c200": "#313131",
+    "c300": "#4d4d4d",
+    "c400": "#6c6c6c",
+    "c500": "#ababab",
+    "c600": "#c9c9c9",
+    "c700": "#ffffff",
+    "c800": "#000000",
+    "s100": "#788590",
+    "s200": "#a7b2bc",
+    "s300": "#c3ccd2",
+    "s400": "#ebeff2",
+    "s500": "#f5f7f8",
+    "e120": "#04a480",
+    "e360": "#2e5bc9",
+    "e480": "#ffca05",
+    "e240": "#f26522",
+    "e720": "#737f8a",
+    "primaryButton": "#63bf31",
+    "secondaryButton": "#1592e6",
+    "primary": "#ffffff",
+    "elevated": "#ffffff",
+    "base": "#f5f7f8",
+    "divisor": "#c3ccd2",
+    "highlight": "#313133",
+    "normal": "#a7b2bc",
+    "fill": "#f5f7f8",
+    "title": "#313133",
+    "subtitle": "#6C6C6C",
+    "description": "#788590"
+  },
+  "fonts": {
+    "types": {},
+    "styles": {
+      "bigTitle": {
+        "fontSize": 28,
+        "fontFamily": "Lato",
+        "fontStyle": "normal",
+        "fontWeight": "bold",
+        "letterSpacing": -0.17,
+        "textAlign": "left"
+      },
+      "moderateTitle": {
+        "fontSize": 20,
+        "fontFamily": "Lato",
+        "fontStyle": "normal",
+        "fontWeight": "bold",
+        "letterSpacing": -0.12,
+        "textAlign": "left"
+      },
+      "mediumTitle": {
+        "fontSize": 18,
+        "fontFamily": "Lato",
+        "fontStyle": "normal",
+        "fontWeight": "500",
+        "letterSpacing": -0.11,
+        "textAlign": "left"
+      },
+      "modestTitle": {
+        "fontSize": 16,
+        "fontFamily": "Lato",
+        "fontStyle": "normal",
+        "fontWeight": "400",
+        "letterSpacing": -0.1,
+        "textAlign": "left"
+      },
+      "smallTitle": {
+        "fontSize": 14,
+        "fontFamily": "Lato",
+        "fontStyle": "normal",
+        "fontWeight": "500",
+        "letterSpacing": -0.09,
+        "textAlign": "left"
+      },
+      "headerTitleIOS": {
+        "fontSize": 17,
+        "fontFamily": "Lato",
+        "fontStyle": "normal",
+        "fontWeight": "bold",
+        "letterSpacing": -0.1,
+        "textAlign": "left"
+      },
+      "headerTitleAndroid": {
+        "fontSize": 20,
+        "fontFamily": "Lato",
+        "fontStyle": "normal",
+        "fontWeight": "bold",
+        "letterSpacing": -0.12,
+        "textAlign": "left"
+      },
+      "normalSubtitle": {
+        "fontSize": 16,
+        "fontFamily": "Lato",
+        "fontStyle": "normal",
+        "fontWeight": "500",
+        "letterSpacing": -0.1,
+        "textAlign": "left"
+      }
+    }
+  }
+}

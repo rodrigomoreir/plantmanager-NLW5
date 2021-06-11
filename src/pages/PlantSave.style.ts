@@ -1,7 +1,7 @@
 import { Dimensions, StyleSheet } from 'react-native';
 import { getBottomSpace } from 'react-native-iphone-x-helper';
-import colors from '../styles/colors';
-import fonts from '../styles/fonts'
+import colors from '../Themes/colors';
+import fonts from '../Themes/fonts'
 
 export const getStyles = () => StyleSheet.create({
   container: {

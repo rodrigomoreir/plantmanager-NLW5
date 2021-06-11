@@ -1,6 +1,6 @@
 import { Dimensions, StyleSheet } from 'react-native';
-import colors from '../styles/colors';
-import fonts from '../styles/fonts'
+import colors from '../Themes/colors';
+import fonts from '../Themes/fonts'
 
 export const getStyles = () => StyleSheet.create({
   container: {
@@ -38,5 +38,22 @@ export const getStyles = () => StyleSheet.create({
     fontFamily: fonts.heading,
     color: colors.heading,
     marginVertical: 20
+  },
+  noRegisteredPlants: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  emoji: {
+    fontSize: 78
+  },
+  withoutPlantsText: {
+    fontSize: 22,
+    fontFamily: fonts.heading,
+    textAlign: 'center',
+    color: colors.heading,
+    lineHeight: 38,
+    marginTop: 15,
+    width: 250
   }
 });

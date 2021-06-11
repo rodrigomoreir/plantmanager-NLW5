@@ -42,43 +42,61 @@ export function MyPlants() {
     async function loadStorageData() {
       const plantsStoraged = await loadPlant()
 
-      const nextTime = formatDistance(
-        new Date(plantsStoraged[0].dateTimeNotification).getTime(),
-        new Date().getTime(),
-        { locale: pt }
-      )
+      if(!!plantsStoraged[0]) {
+        const nextTime = formatDistance(
+          new Date(plantsStoraged[0].dateTimeNotification).getTime(),
+          new Date().getTime(),
+          { locale: pt }
+        )
 
-      setNextWatered(`Não esqueça de regar a ${plantsStoraged[0].name} à ${nextTime}.`)
-      setMyPlants(plantsStoraged)
-      setLoading(false)
+        setNextWatered(`Não esqueça de regar a ${plantsStoraged[0].name} à ${nextTime}.`)
+        setMyPlants(plantsStoraged)
+        setLoading(false)
+      }else{
+        setLoading(false)
+      }
     }
     loadStorageData()
   }, [])
 
-  if(loading)
-  return <Load />
+  console.log(myPlants)
 
   return (
-    <View style={styles.container}>
+    <>
+    {loading ? <Load /> : (
+      <View style={styles.container}>
       <Header />
-      <View style={styles.spotlight}>
-        <Image source={waterdrop} style={styles.spotlightImage} />
-        <Text style={styles.spotlightText}>{nextWatered}</Text>
-      </View>
-      <View style={styles.plants}>
-        <Text style={styles.plantsTitle}>Próximas regadas</Text>
-        <FlatList
-          data={myPlants}
-          keyExtractor={(item) => String(item.id)}
-          renderItem={({item}) => (
-            <PlantCardSecondary
-              data={item}
-              handleRemove={() => {handleRemove(item)}} />
-          )}
-          showsVerticalScrollIndicator={false}
-          contentContainerStyle={{ flex: 1 }}
-        />
-      </View>
+        {myPlants ? (
+          <>
+        <View style={styles.spotlight}>
+          <Image source={waterdrop} style={styles.spotlightImage} />
+          <Text style={styles.spotlightText}>{nextWatered}</Text>
+        </View>
+        <View style={styles.plants}>
+          <Text style={styles.plantsTitle}>Próximas regadas</Text>
+          <FlatList
+            data={myPlants}
+            keyExtractor={(item) => String(item.id)}
+            renderItem={({item}) => (
+              <PlantCardSecondary
+                data={item}
+                handleRemove={() => {handleRemove(item)}} />
+            )}
+            showsVerticalScrollIndicator={false}
+            contentContainerStyle={{ flex: 1 }}
+          />
+        </View>
+      </>
+        ) : (
+          <View style={styles.noRegisteredPlants}>
+            <Text style={styles.emoji}>🙁</Text>
+            <Text style={styles.withoutPlantsText}>Você ainda não possui plantas cadastradas</Text>
+          </View>
+        )}
+
     </View>
+    )}
+    </>
+
   )
 }

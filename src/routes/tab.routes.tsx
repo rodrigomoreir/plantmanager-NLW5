@@ -3,7 +3,7 @@ import { Platform } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { PlantSelect } from '../pages/PlantSelect'
 import { MyPlants } from '../pages/MyPlants'
-import colors from '../styles/colors'
+import colors from '../Themes/colors'
 import { MaterialIcons } from '@expo/vector-icons'
 
 const AppTab = createBottomTabNavigator()

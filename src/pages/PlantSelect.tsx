@@ -7,7 +7,7 @@ import { EnvironmentButton } from '../components/EnvironmentButton'
 import api from '../services/api';
 import { PlantCardPrimary } from '../components/PlantCardPrimary';
 import { Load } from '../components/Load'
-import colors from '../styles/colors';
+import colors from '../Themes/colors';
 import { PlantProps } from '../libs/storage';
 
 interface EnvironmentProps {

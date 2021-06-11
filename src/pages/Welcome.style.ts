@@ -1,11 +1,11 @@
 import { Dimensions, StyleSheet } from 'react-native';
-import colors from '../styles/colors';
-import fonts from '../styles/fonts'
+import colors from '../Themes/colors';
+import fonts from '../Themes/fonts'
 
 // export const getStyles = ({ colors, fonts }: CustomTheme) =>
 export const getStyles = () => StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
   },
   wrapper: {
     flex: 1,

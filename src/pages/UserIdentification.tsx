@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 import { useNavigation } from '@react-navigation/core';
 import { Button } from '../components/Button';
-import colors from '../styles/colors';
+import colors from '../Themes/colors';
 import { getStyles } from './UserIdentification.style';
 import AsyncStorage from '@react-native-async-storage/async-storage'
 

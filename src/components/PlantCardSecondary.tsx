@@ -4,7 +4,7 @@ import { RectButton, RectButtonProps, Swipeable } from 'react-native-gesture-han
 import { getStyles } from './PlantCardSecondary.style'
 import { SvgFromUri } from 'react-native-svg'
 import { Feather } from '@expo/vector-icons'
-import colors from '../styles/colors'
+import colors from '../Themes/colors'
 
 interface PlantProps extends RectButtonProps {
   data: {
